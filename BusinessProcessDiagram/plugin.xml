@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.bpdplugin"
+		name="Business Process Diagram"
+		description="Business Process Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.bpdplugin.BusinessProcessDiagramPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.bpdplugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.bpdplugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.bpdplugin.actionset1.BusinessProcessDiagramAction"
+					actionType="generalAction"
+      		name="Business Process Diagram"
+		      description="Business Process Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Business Process Diagram"
+					toolbarPath="com.vp.plugin.sample.bpdplugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.bpdplugin.actions.BusinessProcessDiagramActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
